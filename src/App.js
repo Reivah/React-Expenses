@@ -1,5 +1,5 @@
 import './App.css'
-import ExpensesElements from "./components/ExpensesElements";
+import ExpenseItems from './components/ExpenseItems';
 
 function App() {
   const expenseArray = [
@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
       <h2 className='expenses-title'>Expenses List</h2>
-      <ExpensesElements title={expenseArray[0].title} price={expenseArray[0].price} date={expenseArray[0].date}></ExpensesElements>
+      <ExpenseItems array={expenseArray}></ExpenseItems>
     </div>
   );
 }

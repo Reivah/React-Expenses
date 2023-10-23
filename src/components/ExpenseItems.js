@@ -1,25 +1,29 @@
+import './ExpenseItems.css'
 import ExpensesElements from './ExpensesElements'
-const ExpensesItems = props => {
+const ExpenseItems = props => {
+    return (
 	<div className='expenses-items'>
 		<ExpensesElements
-			title={props.expenseArray[0].title}
-			price={props.expenseArray[0].price}
-			date={props.expenseArray[0].date}/>
+			title={props.array[0].title}
+			price={props.array[0].price}
+			date={props.array[0].date}/>
 		<ExpensesElements
-			title={props.expenseArray[1].title}
-			price={props.expenseArray[1].price}
-			date={props.expenseArray[1].date}/>
+			title={props.array[1].title}
+			price={props.array[1].price}
+			date={props.array[1].date}/>
 		<ExpensesElements
-			title={props.expenseArray[2].title}
-			price={props.expenseArray[2].price}
-			date={props.expenseArray[2].date}/>
+			title={props.array[2].title}
+			price={props.array[2].price}
+			date={props.array[2].date}/>
 		<ExpensesElements
-			title={props.expenseArray[3].title}
-			price={props.expenseArray[3].price}
-			date={props.expenseArray[3].date}
+			title={props.array[3].title}
+			price={props.array[3].price}
+			date={props.array[3].date}
 		/>
 	</div>
+
+    )
 }
 
 
-export default ExpensesItems
+export default ExpenseItems
