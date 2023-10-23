@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
       <h2 className='expenses-title'>Expenses List</h2>
-      <ExpensesElements></ExpensesElements>
+      <ExpensesElements title={expenseArray[0].title} price={expenseArray[0].price} date={expenseArray[0].date}></ExpensesElements>
     </div>
   );
 }
