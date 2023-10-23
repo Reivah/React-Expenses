@@ -1,5 +1,36 @@
 .expenses-elements {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     align-items: center;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #2e67e4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    color: #fff;
+}
+
+.expenses-elements__date{
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #fff;
+    margin-right: 30px;
+    background-color: rgb(27, 134, 108);
+}
+.expenses-elements__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.expeneses-elements__price {
+    padding: 10px;
+    width: 15%;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    background-color: red;
+    font-weight: bold;
 }
