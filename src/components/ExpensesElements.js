@@ -1,9 +1,10 @@
 import './ExpensesElements.css'
+import Date from './Date'
 const ExpensesElements = props => {
 	return (
 		<div className='expenses-elements'>
 			<div className='expenses-elements__date'>
-				<div>{props.date.toLocaleString()}</div>
+				<Date date={props.date}></Date>
 			</div>
 			<div className='expenses-elements__items'>
 				<h1>{props.title}</h1>
