@@ -1,3 +1,4 @@
+import './ExpensesElements.css'
 const ExpensesElements = () => {
 	return (
 		<div className='expenses-elements'>
