@@ -1,7 +1,7 @@
 import './Date.css'
 const Date = props => {
     const year = props.date.toLocaleString('en-US', {year: 'numeric'})
-    const month = props.date.toLocaleString('en-US', {month: '2-digit'})
+    const month = props.date.toLocaleString('en-US', {month: 'long'})
     const day = props.date.toLocaleString('en-US', {day: 'numeric'})
     return (
         <div className='expense-date'>
