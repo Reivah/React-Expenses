@@ -3,7 +3,7 @@
     align-items: center;
     margin: 50px auto;
     padding: 10px 20px;
-    background-color: #713ABE;
+    background-color: #D2DAFF;
     width: 1000px;
 }
 
@@ -12,13 +12,14 @@
     padding: 12px;
     border: 2px solid #fff;
     margin-right: 30px;
-    background-color: #9D76C1;
+    background-color: #B1B2FF;
 }
 .expenses-elements__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    font-size: 15px;
 }
 
 .expeneses-elements__price {
@@ -27,7 +28,7 @@
     font-size: 20px;
     border-radius: 20px;
     text-align: center;
-    border: 2px solid #fff;
-    background-color: #c71e26;
+    box-shadow: 0px 0px 10px;
+    background-color: #AAC4FF;
     font-weight: bold;
 }

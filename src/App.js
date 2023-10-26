@@ -27,8 +27,10 @@ function App() {
   return (
     <div>
       <h2 className='expenses-title'>Expenses List</h2>
+      <div className='app-main'>
       <FormBox/>
       <ExpenseItems array={expenseArray}></ExpenseItems>
+      </div>
     </div>
   );
 }

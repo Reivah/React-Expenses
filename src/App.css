@@ -1,8 +1,18 @@
 body {
-    background-color: #5B0888;
-    color: #fff
+    background-color: #B1B2FF;
+    color: #050505
 }
 .expenses-title {
     text-align: center;
     font-size: 40px;
+}
+
+.app-main {
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #AAC4FF;
+    width: 1200px;
+    box-shadow: 0px 0px 10px black;
+    
 }

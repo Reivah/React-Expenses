@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './FormExpenses.css'
 const FormExpenses = () => {
     return (
         <form>
-            <div className='from-main'>
+            <div className='form-main'>
                 <div className='form-main__box'>
                    <label type='text'>title</label>
                    <input type='text'/>
