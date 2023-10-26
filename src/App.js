@@ -1,5 +1,6 @@
 import './App.css'
 import ExpenseItems from './components/ExpenseItems';
+import FormBox from './components/FormExpenses/FormBox';
 
 function App() {
   const expenseArray = [
@@ -26,6 +27,7 @@ function App() {
   return (
     <div>
       <h2 className='expenses-title'>Expenses List</h2>
+      <FormBox/>
       <ExpenseItems array={expenseArray}></ExpenseItems>
     </div>
   );

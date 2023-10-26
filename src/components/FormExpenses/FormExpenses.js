@@ -12,3 +12,5 @@ const FormExpenses = () => {
         </form>
     )
 }
+
+export default FormExpenses
