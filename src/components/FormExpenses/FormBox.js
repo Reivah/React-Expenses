@@ -2,7 +2,7 @@ import './FormBox.css'
 import FormExpenses from './FormExpenses'
 const FormBox = () => {
     return (
-        <div>
+        <div className='form-box__main'>
             <FormExpenses/>
         </div>
     )

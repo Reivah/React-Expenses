@@ -1,10 +1,10 @@
 .expenses-elements {
     display: flex;
     align-items: center;
-    margin: 50px;
+    margin: 50px auto;
     padding: 10px 20px;
     background-color: #713ABE;
-    color: #fff;
+    width: 1000px;
 }
 
 .expenses-elements__date{
