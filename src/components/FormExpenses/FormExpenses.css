@@ -28,3 +28,20 @@
     text-align: end;
 }
 
+.button-box button {
+    padding: 10px 15px;
+    width: 15%;
+    font-size: 18px;
+    background-color: #B1B2FF;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+}
+
+.button-box button:hover {
+    color: #fff;
+    background-color: rgb(143, 32, 233);
+}
+
