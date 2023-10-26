@@ -1,17 +1,23 @@
 .form-main {
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .form-main__box {
-    margin: 0 15px 15px 15px;
-    width: 300px;
+    margin: 20px auto;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+
+
 .form-main__box input{
-    width: 80%;
+    margin-top: 20px;
+    padding: 10px 12px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 10px;
 }
