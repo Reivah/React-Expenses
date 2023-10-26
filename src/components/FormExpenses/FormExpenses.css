@@ -1,8 +1,17 @@
 .form-main {
     display: flex;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
-    
+    flex-wrap: wrap;
+}
+
+.form-main__box {
+    margin: 0 15px 15px 15px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-main__box input{
+    width: 80%;
 }
