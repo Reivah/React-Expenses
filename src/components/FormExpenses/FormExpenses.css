@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+
 }
 
 .form-main__box {
+    text-align: left;
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -21,3 +22,9 @@
     font-size: 15px;
     border-radius: 10px;
 }
+
+.button-box {
+    margin: 20px 40px 0 0;
+    text-align: end;
+}
+
