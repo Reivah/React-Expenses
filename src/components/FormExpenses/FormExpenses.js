@@ -5,9 +5,20 @@ const FormExpenses = () => {
         <form>
             <div className='from-main'>
                 <div className='form-main__box'>
-                   <label>title</label>
-                   <input/>
+                   <label type='text'>title</label>
+                   <input type='text'/>
                 </div>
+                <div className='form-main__box'>
+                   <label type='number'>Price</label>
+                   <input type='number'/>
+                </div>
+                <div className='form-main__box'>
+                   <label type='date'>Date</label>
+                   <input type='date'/>
+                </div>
+            </div>
+            <div className='button-box'>
+                <button type='submit'>Apply</button>
             </div>
         </form>
     )
