@@ -9,12 +9,12 @@ const FormExpenses = () => {
         <form>
             <div className='form-main'>
                 <div className='form-main__box'>
-                   <label type='text'>title</label>
-                   <input type='text'/>
+                   <label type='text'>Expense name</label>
+                   <input type='text' placeholder='Description'/>
                 </div>
                 <div className='form-main__box'>
                    <label type='number'>Price</label>
-                   <input type='number'/>
+                   <input type='number' placeholder='Value'/>
                 </div>
                 <div className='form-main__box'>
                    <label type='date'>Date</label>
