@@ -3,7 +3,21 @@ import { useState } from 'react'
 import './FormExpenses.css'
 const FormExpenses = () => {
 
+const [expenseName, setExpenseName] = useState('')
+const [price, setPrice] = useState('')
+const [date, setDate] = useState('')
 
+const setExpenseHandler = event => {
+    setExpenseName(event.target.value)
+}
+
+const setPriceHandler = event => {
+    setPrice(event.target.value)
+}
+
+const setDateHandler = event => {
+    setDate(event.target.value)
+}
 
     return (
         <form>
