@@ -24,15 +24,15 @@ const setDateHandler = event => {
             <div className='form-main'>
                 <div className='form-main__box'>
                    <label type='text'>Expense name</label>
-                   <input type='text' placeholder='Description'/>
+                   <input type='text' placeholder='Description' onChange={setExpenseHandler}/>
                 </div>
                 <div className='form-main__box'>
                    <label type='number'>Price</label>
-                   <input type='number' placeholder='Value'/>
+                   <input type='number' placeholder='Value' onChange={setPriceHandler}/>
                 </div>
                 <div className='form-main__box'>
                    <label type='date'>Date</label>
-                   <input type='date'/>
+                   <input type='date' onChange={setDateHandler}/>
                 </div>
             </div>
             <div className='button-box'>
