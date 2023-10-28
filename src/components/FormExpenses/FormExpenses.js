@@ -36,10 +36,11 @@ const expenseInfoHandlers = event => {
         price: price,
         date: new Date(date)
     }
+    console.log(expenseInfo);
 }
 
     return (
-        <form>
+        <form onSubmit={expenseInfoHandlers}>
             <div className='form-main'>
                 <div className='form-main__box'>
                    <label type='text'>Expense name</label>
