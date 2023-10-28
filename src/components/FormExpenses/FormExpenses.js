@@ -42,7 +42,7 @@ const inputHandlers = (input, value) => {
                 </div>
                 <div className='form-main__box'>
                    <label type='date'>Date</label>
-                   <input type='date' />
+                   <input type='date' onChange={(event) => {inputHandlers('Date', event.target.value)}} />
                 </div>
             </div>
             <div className='button-box'>
