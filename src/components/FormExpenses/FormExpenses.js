@@ -38,7 +38,7 @@ const inputHandlers = (input, value) => {
                 </div>
                 <div className='form-main__box'>
                    <label type='number'>Price</label>
-                   <input type='number' placeholder='Value'  />
+                   <input type='number' placeholder='Value' onChange={(event) => {inputHandlers('Price', event.target.value)}}  />
                 </div>
                 <div className='form-main__box'>
                    <label type='date'>Date</label>
