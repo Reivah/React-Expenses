@@ -29,6 +29,15 @@ const inputHandlers = (input, value) => {
     }
 }
 
+const expenseInfoHandlers = event => {
+    event.preventDefault()
+    const expenseInfo = {
+        name: expenseName,
+        price: price,
+        date: new Date(date)
+    }
+}
+
     return (
         <form>
             <div className='form-main'>
