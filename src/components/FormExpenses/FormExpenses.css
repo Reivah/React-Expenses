@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    
 
 }
 
@@ -45,5 +46,18 @@
 .button-box button:hover {
     color: #fff;
     background-color: rgb(143, 32, 233);
+}
+
+@media (min-width: 580px) {
+    .form-main {
+        flex-direction: row;
+
+        
+    }
+
+    .form-main__box {
+        margin: 10px;
+        
+    }
 }
 
