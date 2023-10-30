@@ -2,12 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 
 }
 
 .form-main__box {
-    text-align: left;
     margin: 20px auto;
+    width: 100%;
+    text-align: left;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -18,7 +20,7 @@
 .form-main__box input{
     margin-top: 20px;
     padding: 10px 12px;
-    width: 90%;
+    width: 100%;
     font-size: 15px;
     border-radius: 10px;
 }
@@ -26,11 +28,11 @@
 .button-box {
     margin: 20px 40px 0 0;
     text-align: end;
+    width: 100%;
 }
 
 .button-box button {
     padding: 10px 15px;
-    width: 15%;
     font-size: 18px;
     background-color: #B1B2FF;
     border: 1px solid black;

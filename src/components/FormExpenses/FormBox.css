@@ -1,10 +1,10 @@
 .form-box__main {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
   margin: 50px auto;
   background-color: #EEF1FF;
   border-radius: 10px;
   box-shadow: 0px 0px 10px black;
 }
+
+
 
