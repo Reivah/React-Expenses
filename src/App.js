@@ -24,11 +24,17 @@ function App() {
       price: 230.99,
       date: new Date(2023,2,10)
     }]
+
+    const dataExpenseHandler = (expenses) => {
+        console.log(expenses);
+        console.log('check ');
+    }
+
   return (
     <div>
       <h2 className='expenses-title'>Expenses List</h2>
       <div className='app-main'>
-      <FormBox/>
+      <FormBox onDataExpenseHandler={dataExpenseHandler}/>
       <ExpenseItems array={expenseArray}></ExpenseItems>
       </div>
     </div>

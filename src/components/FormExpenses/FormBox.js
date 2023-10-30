@@ -1,13 +1,13 @@
 import './FormBox.css'
 import FormExpenses from './FormExpenses'
-const FormBox = () => {
+const FormBox = (props) => {
 
     const enteredDataExpenses = (expenses) => {
         const dataExpenses = {
             ...expenses,
             id: Math.random().toString()
         }
-        console.log(dataExpenses);
+        props.onDataExpenseHandler(dataExpenses)
         
     }
 
