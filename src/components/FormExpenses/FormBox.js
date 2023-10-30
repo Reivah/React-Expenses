@@ -2,8 +2,11 @@ import './FormBox.css'
 import FormExpenses from './FormExpenses'
 const FormBox = () => {
 
-    const expensesData = (expenses) => {
-        
+    const enteredDataExpenses = (expenses) => {
+        const dataExpenses = {
+            ...expenses,
+            id: Math.random().toString()
+        }
     }
 
     return (
