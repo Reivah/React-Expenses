@@ -9,10 +9,10 @@ body {
 
 .app-main {
     margin: 50px auto;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     background-color: #AAC4FF;
-    width: 1200px;
+    max-width: 70%;
     box-shadow: 0px 0px 10px black;
     
 }
