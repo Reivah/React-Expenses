@@ -4,6 +4,7 @@ import ExpenseYearSearch from './ExpenseYearSearch'
 const ExpenseItems = props => {
     return (
 	<div>
+		<ExpenseYearSearch/>
 		<ExpensesElements
 			title={props.array[0].title}
 			price={props.array[0].price}
