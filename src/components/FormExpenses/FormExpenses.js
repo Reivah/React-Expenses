@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './FormExpenses.css'
-const FormExpenses = () => {
+const FormExpenses = (props) => {
 
 const [expenseName, setExpenseName] = useState('')
 const [price, setPrice] = useState('')
@@ -36,7 +36,7 @@ const expenseInfoHandlers = event => {
         price: price,
         date: new Date(date)
     }
-    console.log(expenseInfo);
+    props.onEnteredDataExpenses(expenseInfo)
 }
 
     return (

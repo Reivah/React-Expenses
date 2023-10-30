@@ -7,11 +7,13 @@ const FormBox = () => {
             ...expenses,
             id: Math.random().toString()
         }
+        console.log(dataExpenses);
+        
     }
 
     return (
         <div className='form-box__main'>
-            <FormExpenses/>
+            <FormExpenses onEnteredDataExpenses={enteredDataExpenses}/>
         </div>
     )
 }
