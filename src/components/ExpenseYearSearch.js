@@ -1,10 +1,18 @@
 import './ExpenseYearSearch.css'
 const ExpenseYearSearch = () => {
+
+    const yearValueHandler = event => {
+        const yearValue = event.target.value
+        
+    }
+
     return (
+
+        
         <div className="filter-main">
             <div className="filter-main__box">
                 <label>Search by year</label>
-                <select>
+                <select onChange={yearValueHandler}>
                     <option value='2023'>2023</option>
                     <option value='2022'>2022</option>
                     <option value='2021'>2021</option>
