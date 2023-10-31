@@ -2,9 +2,16 @@
 import ExpensesElements from './ExpensesElements'
 import ExpenseYearSearch from './ExpenseYearSearch'
 const ExpenseItems = props => {
+
+	const selectedYearValue = (yearValue) => {
+		const year = yearValue 
+		console.log(year);
+		
+	}
+
     return (
 	<div>
-		<ExpenseYearSearch/>
+		<ExpenseYearSearch onSelectedYearValue={selectedYearValue}/>
 		<ExpensesElements
 			title={props.array[0].title}
 			price={props.array[0].price}

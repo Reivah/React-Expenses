@@ -1,9 +1,9 @@
 import './ExpenseYearSearch.css'
-const ExpenseYearSearch = () => {
+const ExpenseYearSearch = (props) => {
 
     const yearValueHandler = event => {
         const yearValue = event.target.value
-        
+        props.onSelectedYearValue(yearValue)
     }
 
     return (
