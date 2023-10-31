@@ -12,7 +12,7 @@ const ExpenseYearSearch = (props) => {
         <div className="filter-main">
             <div className="filter-main__box">
                 <label>Search by year</label>
-                <select onChange={yearValueHandler}>
+                <select value={props.onSelectedYear} onChange={yearValueHandler}>
                     <option value='2023'>2023</option>
                     <option value='2022'>2022</option>
                     <option value='2021'>2021</option>

@@ -1,17 +1,19 @@
-
+import { useState } from 'react'
 import ExpensesElements from './ExpensesElements'
 import ExpenseYearSearch from './ExpenseYearSearch'
 const ExpenseItems = props => {
 
+	const [selectedYear, setSelectedYear] = useState('2023')
+
 	const selectedYearValue = (yearValue) => {
 		const year = yearValue 
-		console.log(year);
+		setSelectedYear(year)
 		
 	}
 
     return (
 	<div>
-		<ExpenseYearSearch onSelectedYearValue={selectedYearValue}/>
+		<ExpenseYearSearch onSelectedYear={selectedYear} onSelectedYearValue={selectedYearValue}/>
 		<ExpensesElements
 			title={props.array[0].title}
 			price={props.array[0].price}
