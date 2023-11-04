@@ -30,11 +30,13 @@ const expenseArray = [
   }]
 
 function App() {
-  
+
+  const [expense, setExpenses] = useState(expenseArray)
 
     const dataExpenseHandler = (expenses) => {
-        console.log(expenses);
-        console.log('check ');
+        setExpenses((prevExpense) => {
+          return ([expenses, ...prevExpense])
+        })
     }
 
   return (
@@ -42,7 +44,7 @@ function App() {
       <h2 className='expenses-title'>Expenses List</h2>
       <div className='app-main'>
       <FormBox onDataExpenseHandler={dataExpenseHandler}/>
-      <ExpenseItems array={expenseArray}></ExpenseItems>
+      <ExpenseItems expensesArray={expense}></ExpenseItems>
       </div>
     </div>
   );
