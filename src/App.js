@@ -5,21 +5,25 @@ import FormBox from './components/FormExpenses/FormBox';
 
 const expenseArray = [
   {
+    id: '1',
     title: 'Gaming computer',
     price: 5999.50,
     date: new Date(2022,5,20)
   },
   {
+    id: '2',
     title: 'OLED TV',
     price: 2500.90,
     date: new Date(2022,7,10)
   },
   {
+    id: '3',
     title: 'Food',
     price: 80.99,
     date: new Date(2023,1,15)
   },
   {
+    id: 4,
     title: 'Books',
     price: 230.99,
     date: new Date(2023,2,10)
