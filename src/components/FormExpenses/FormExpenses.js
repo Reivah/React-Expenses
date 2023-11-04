@@ -32,7 +32,7 @@ const inputHandlers = (input, value) => {
 const expenseInfoHandlers = event => {
     event.preventDefault()
     const expenseInfo = {
-        name: expenseName,
+        title: expenseName,
         price: price,
         date: new Date(date)
     }
