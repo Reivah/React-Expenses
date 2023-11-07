@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ExpensesElements from './ExpensesElements'
 import ExpenseYearSearch from './ExpenseYearSearch'
+import ExpensesList from './ExpensesList'
 const ExpenseItems = props => {
 	const [selectedYear, setSelectedYear] = useState('2023')
 
