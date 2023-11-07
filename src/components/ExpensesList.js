@@ -6,7 +6,7 @@ const ExpensesList = (props) => {
     
 
     if(props.filterExpensesArray.length === 0){
-        <h2 className='expense-list'>No expenses found</h2>
+        return <h2 className='expenses-list'>No expenses found</h2>
     }
     
     return props.filterExpensesArray.map(expense => (
