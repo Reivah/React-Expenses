@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ExpensesElements from './ExpensesElements'
+
 import ExpenseYearSearch from './ExpenseYearSearch'
 import ExpensesList from './ExpensesList'
 const ExpenseItems = props => {
@@ -17,9 +17,7 @@ const ExpenseItems = props => {
 	return (
 		<div>
 			<ExpenseYearSearch onSelectedYear={selectedYear} onSelectedYearValue={selectedYearValue} />
-			{filterExpenses.map(expense => (
-				<ExpensesElements key={expense.id} title={expense.title} price={expense.price} date={expense.date} />
-			))}
+			<ExpensesList filterExpensesArray={filterExpenses}/>
 		</div>
 	)
 }
