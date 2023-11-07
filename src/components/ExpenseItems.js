@@ -9,12 +9,12 @@ const ExpenseItems = props => {
 		setSelectedYear(year)
 	}
 
-	const expenseFilter = props.expensesArray.filter(expense => expense.date.getFullYear().toString() === selectedYear)
+	const filterExpenses = props.expensesArray.filter(expense => expense.date.getFullYear().toString() === selectedYear)
 
 	return (
 		<div>
 			<ExpenseYearSearch onSelectedYear={selectedYear} onSelectedYearValue={selectedYearValue} />
-			{props.expensesArray.map(expense => (
+			{filterExpenses.map(expense => (
 				<ExpensesElements key={expense.id} title={expense.title} price={expense.price} date={expense.date} />
 			))}
 		</div>
