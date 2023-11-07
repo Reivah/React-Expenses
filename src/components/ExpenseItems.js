@@ -11,6 +11,8 @@ const ExpenseItems = props => {
 
 	const filterExpenses = props.expensesArray.filter(expense => expense.date.getFullYear().toString() === selectedYear)
 
+	
+
 	return (
 		<div>
 			<ExpenseYearSearch onSelectedYear={selectedYear} onSelectedYearValue={selectedYearValue} />
