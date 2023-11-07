@@ -37,6 +37,10 @@ const expenseInfoHandlers = event => {
         date: new Date(date)
     }
     props.onEnteredDataExpenses(expenseInfo)
+    setExpenseName('')
+    setPrice('')
+    setDate('')
+    
 }
 
     return (

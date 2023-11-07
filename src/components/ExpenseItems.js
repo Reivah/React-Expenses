@@ -18,6 +18,7 @@ const ExpenseItems = props => {
 		<div>
 			<ExpenseYearSearch onSelectedYear={selectedYear} onSelectedYearValue={selectedYearValue} />
 			<ExpensesList filterExpensesArray={filterExpenses}/>
+
 		</div>
 	)
 }
