@@ -12,18 +12,20 @@ const FormBox = (props) => {
         
     }
 
-    const [isShowingExpenseInput, setIsShowingExpenseInput] = useState(false)
+    const [isShowing, setIsShowing] = useState(false)
+
 
     const showExpenseBox = () => {
-        setIsShowingExpenseInput(true)
+        setIsShowing(true)
     }
 
     const closeExpenseBox = () => {
-        setIsShowingExpenseInput(true)
+        setIsShowing(true)
     }
 
     return (
         <div className='form-box__main'>
+            <button className='form-box__btn'>Add New Expense</button>
             <FormExpenses onEnteredDataExpenses={enteredDataExpenses}/>
         </div>
     )
