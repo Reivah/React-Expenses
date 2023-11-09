@@ -20,13 +20,13 @@ const FormBox = (props) => {
     }
 
     const closeExpenseBox = () => {
-        setIsShowing(true)
+        setIsShowing(false)
     }
 
     return (
         <div className='form-box__main'>
             {!isShowing && <button onClick={showExpenseBox} className='form-box__btn'>Add New Expense</button>}
-            {isShowing && <FormExpenses onEnteredDataExpenses={enteredDataExpenses}/>}
+            {isShowing && <FormExpenses onEnteredDataExpenses={enteredDataExpenses} onCloseExpenseBox={closeExpenseBox}/>}
         </div>
     )
 }
