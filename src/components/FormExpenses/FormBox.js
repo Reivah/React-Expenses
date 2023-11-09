@@ -25,8 +25,8 @@ const FormBox = (props) => {
 
     return (
         <div className='form-box__main'>
-            <button className='form-box__btn'>Add New Expense</button>
-            <FormExpenses onEnteredDataExpenses={enteredDataExpenses}/>
+            {!isShowing && <button onClick={showExpenseBox} className='form-box__btn'>Add New Expense</button>}
+            {isShowing && <FormExpenses onEnteredDataExpenses={enteredDataExpenses}/>}
         </div>
     )
 }
