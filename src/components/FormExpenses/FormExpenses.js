@@ -50,6 +50,7 @@ const expenseInfoHandlers = event => {
             </div>
             <div className='button-box'>
                 <button type='submit'>Apply</button>
+                <button type='button'>Cancel</button>
             </div>
         </form>
     )

@@ -33,6 +33,7 @@
 }
 
 .button-box button {
+    margin-left: 20px;
     padding: 10px 15px;
     font-size: 18px;
     background-color: #B1B2FF;
