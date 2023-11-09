@@ -7,17 +7,6 @@ const [expenseName, setExpenseName] = useState('')
 const [price, setPrice] = useState('')
 const [date, setDate] = useState('')
 
-// const setExpenseHandler = event => {
-//     setExpenseName(event.target.value)
-// }
-
-// const setPriceHandler = event => {
-//     setPrice(event.target.value)
-// }
-
-// const setDateHandler = event => {
-//     setDate(event.target.value)
-// }
 
 const inputHandlers = (input, value) => {
     if(input === 'Expense name'){

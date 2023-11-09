@@ -1,3 +1,4 @@
+import { useState} from 'react'
 import './FormBox.css'
 import FormExpenses from './FormExpenses'
 const FormBox = (props) => {
@@ -9,6 +10,16 @@ const FormBox = (props) => {
         }
         props.onDataExpenseHandler(dataExpenses)
         
+    }
+
+    const [isShowingExpenseInput, setIsShowingExpenseInput] = useState(false)
+
+    const showExpenseBox = () => {
+        setIsShowingExpenseInput(true)
+    }
+
+    const closeExpenseBox = () => {
+        setIsShowingExpenseInput(true)
     }
 
     return (
